@@ -1,0 +1,36 @@
+
+.logo1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bienvenidos{
+    text-align: center;
+    position: relative;    
+    padding-bottom: 20px;
+    padding-top: 20px;     
+}
+.container2 {
+    display: flex; /* Usa flexbox para alinear los elementos internos */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    text-align: center;    
+    margin: 0 auto; /* Asegura que el contenedor también esté centrado en la columna */
+    padding: 0; /* Elimina el padding si no es necesario */
+    border: none; /* Asegúrate de no tener un borde que imite un botón */
+    background: none; /* Fondo transparente para evitar el efecto de botón sobre botón */
+}
+
+.btn {
+    text-align: center;    
+    background-color: rgba(255, 255, 255, 0.622); /* O el color que desees para tu botón */
+    color: white;
+    padding: 10px 20px; /* Ajusta el padding para tu botón */
+    border-radius: 20px;
+    font-size: 20px;    
+    width: 30%; /* Ancho del botón */
+    margin: 0; /* Elimina el margen si está causando espacio extra */
+    box-shadow: none; /* Elimina sombras que puedan dar un efecto de profundidad */
+    border: none; /* Si no deseas un borde alrededor del botón */
+}

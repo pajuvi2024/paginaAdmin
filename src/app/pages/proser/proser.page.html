@@ -1,0 +1,68 @@
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar color="mycolor">
+      <ion-title class="cuentas" ><i>Productos & Servicios</i></ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+
+
+<ion-card>
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          <ion-label>Filtrar por:</ion-label>
+        </ion-list-header>
+
+        <div class="radio-group-container">
+        <ion-item lines="none">
+          <ion-label>Nombre</ion-label>
+          <ion-radio slot="start" value="nombre"></ion-radio>
+        </ion-item>
+    
+        <ion-item lines="none">
+          <ion-label>Apellido</ion-label>
+          <ion-radio slot="start" value="apellido"></ion-radio>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label>Móvil</ion-label>
+          <ion-radio slot="start" value="movil"></ion-radio>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label>Email</ion-label>
+          <ion-radio slot="start" value="email"></ion-radio>
+        </ion-item>
+      </div>
+      </ion-radio-group>
+    
+    </ion-list>
+
+    <ion-item class="textbox">
+      <ion-label position="floating">Ingresa tu búsqueda</ion-label>
+      <ion-input type="text" [(ngModel)]="searchText"></ion-input>
+    </ion-item>
+    
+    <ion-card class="buscarbtn">
+      <ion-button (click)="performSearch()">BUSCAR</ion-button>
+    </ion-card>
+  </ion-card>
+    
+    <ion-card>
+      <ion-title class="title2">Usuarios encontrados:</ion-title>
+      <ion-list class="textbox">
+        <ion-item *ngFor="let user of foundUsers" (click)="onSelectUser(user)" [class.selected]="selectedUser === user">
+          <ion-label>{{ user.name }}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card>
+  
+    
+    
+
+  </ion-content> 
+
+<ion-footer></ion-footer>
+</div> 

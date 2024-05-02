@@ -1,0 +1,21 @@
+.cuentas{
+    text-align: center;
+    position: relative;    
+    padding-bottom: 20px;
+    padding-top: 20px;     
+  }
+  .url-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%; // Asegura que la entrada de texto no exceda el ancho de la pantalla
+    input[type="text"] {
+      width: 90%; // Usa un porcentaje del ancho para asegurar el ajuste dentro de la pantalla
+      margin-bottom: 10px;
+      color: black; // Texto en negro
+      background-color: white; // Fondo en blanco
+      border: 1px solid #ccc; // Borde sutil para el input
+      padding: 5px 10px; // Padding adecuado para el input
+    }
+  }

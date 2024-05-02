@@ -1,0 +1,41 @@
+.cuentas{
+  text-align: center;
+  position: relative;    
+  padding-bottom: 20px;
+  padding-top: 20px;     
+} 
+.radio-group-container {
+  display: flex;
+  flex-direction: row;
+}
+
+ion-card {
+  max-width: 50%; /* Ajusta este valor según necesites */
+  margin: 0 auto; /* Centra la tarjeta horizontalmente */
+  margin-top: 20px;
+}
+
+.textbox{
+  max-width: 70%;
+  margin-left: 10px;
+}
+
+.buscarbtn{
+    text-align: center;    
+    color: white;
+    padding: 10px 20px; /* Ajusta el padding para tu botón */
+    border-radius: 20px;
+    font-size: 20px;    
+    width: 30%; /* Ancho del botón */
+    margin: 0; /* Elimina el margen si está causando espacio extra */
+    box-shadow: none; /* Elimina sombras que puedan dar un efecto de profundidad */
+    border: none; /* Si no deseas un borde alrededor del botón */
+    margin-left: 280px;
+}
+.title2{
+  text-align: center;
+  position: relative;    
+  padding-bottom: 20px;
+  padding-top: 20px;     
+  color: black;
+} 
