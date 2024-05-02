@@ -2,6 +2,11 @@
   <ion-header>
     <ion-toolbar color="mycolor">
       <ion-title class="bienvenidos" ><i>BYODT Administración</i></ion-title>
+      <ion-buttons slot="end">
+        <ion-button [routerLink]="['/login']" (click)="signOut()">
+          <ion-icon style="font-size: 30px;" name="log-out"></ion-icon>
+        </ion-button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
 

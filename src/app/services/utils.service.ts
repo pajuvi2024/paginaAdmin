@@ -13,7 +13,7 @@ export class UtilsService {
 
   constructor(private loadingCtrl: LoadingController,
               private toastCtrl: ToastController,
-              private angularFireAuth: AngularFireAuth,
+  
               private authfirebase: AngularFireAuth,
               ) { }
 

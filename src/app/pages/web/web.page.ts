@@ -10,4 +10,12 @@ export class WebPage implements OnInit {
   constructor() { }
 
   ngOnInit(): void {}
+
+  signOut() {
+    // Eliminar el token de autenticación de localStorage
+    localStorage.clear();
+  }
+
+
+  
 }

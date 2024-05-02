@@ -68,7 +68,7 @@ export class LoginPage implements OnInit {
               icon: 'alert-circle-sharp'
             });
             setTimeout(() => {
-              this.router.navigate(['/main']); // Asumimos que 'main' es tu página principal
+              this.router.navigate(['/web']); // Asumimos que 'main' es tu página principal
             }, 1000); // Esperamos 1 segundo antes de navegar
           }
         }

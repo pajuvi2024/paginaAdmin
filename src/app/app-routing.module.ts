@@ -20,50 +20,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule), canActivate:[NoAuthGuard]
   },
   {
-    path: 'forgot-pass',
-    loadChildren: () => import('./pages/forgot-pass/forgot-pass.module').then( m => m.ForgotPassPageModule),canActivate:[NoAuthGuard]
-  },
-  {
-    path: 'sign-up',
-    loadChildren: () => import('./pages/sign-up/sign-up.module').then( m => m.SignUpPageModule), canActivate:[NoAuthGuard]
-  },
-  {
-    path: 'ubication',
-    loadChildren: () => import('./pages/ubication/ubication.module').then( m => m.UbicationPageModule), canActivate:[AuthGuard]
-  },
-  {
-    path: 'main',
-    loadChildren: () => import('./pages/main/main.module').then( m => m.MainPageModule),canActivate: [AuthGuard]
-  },  
-  {
-    path: 'pago',
-    loadChildren: () => import('./pages/pago/pago.module').then( m => m.PagoPageModule),canActivate:[AuthGuard]
-  },
-  {
-    path: 'pago2',
-    loadChildren: () => import('./pages/pago2/pago2.module').then( m => m.Pago2PageModule),canActivate:[AuthGuard]
-  },
-  {
-    path: 'perfil',
-    loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
-  },
-  {
-    path: 'registro-productos',
-    loadChildren: () => import('./pages/registro-productos/registro-productos.module').then( m => m.RegistroProductosPageModule)
-  },
-  {
-    path: 'registro-servicios',
-    loadChildren: () => import('./pages/registro-servicios/registro-servicios.module').then( m => m.RegistroServiciosPageModule)
-  },
-  {
-    path: 'registro-productos',
-    loadChildren: () => import('./pages/registro-productos/registro-productos.module').then( m => m.RegistroProductosPageModule)
-  },
-  {
-    path: 'buscar',
-    loadChildren: () => import('./pages/buscar/buscar.module').then( m => m.BuscarPageModule)
-  },
-  {
     path: 'productos',
     loadChildren: () => import('./pages/productos/productos.module').then( m => m.ProductosPageModule)
   },
@@ -72,37 +28,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/servicios/servicios.module').then( m => m.ServiciosPageModule)
   },
   {
-    path: 'membresia',
-    loadChildren: () => import('./pages/membresia/membresia.module').then( m => m.MembresiaPageModule)
-  },
-  {
-    path: 'geo-ref',
-    loadChildren: () => import('./pages/geo-ref/geo-ref.module').then( m => m.GeoRefPageModule)
-  },
-  {
-    path: 'geocoding',
-    loadChildren: () => import('./pages/geocoding/geocoding.module').then( m => m.GeocodingPageModule)
-  },
-  {
-    path: 'ubication-especifica',
-    loadChildren: () => import('./pages/ubication-especifica/ubication-especifica.module').then( m => m.UbicationEspecificaPageModule)
-  },
-  {
-    path: 'paypal',
-    loadChildren: () => import('./pages/paypal/paypal.module').then( m => m.PaypalPageModule)
-  },
-  {
-    path: 'paypal2',
-    loadChildren: () => import('./pages/paypal2/paypal2.module').then( m => m.Paypal2PageModule)
-  },
-  {
-    path: 'webpay',
-    loadChildren: () => import('./pages/webpay/webpay.module').then( m => m.WebpayPageModule)
-  },
-  {
-    path: 'webpay2',
-    loadChildren: () => import('./pages/webpay2/webpay2.module').then( m => m.Webpay2PageModule)
-  },  {
     path: 'web',
     loadChildren: () => import('./pages/web/web.module').then( m => m.WebPageModule)
   },
